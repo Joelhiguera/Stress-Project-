@@ -1,3 +1,38 @@
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.resource-page{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-header{
+  text-align: center;
+    margin-top: 40px;
+
+}
+
+ #nav-pages{ 
+    border: 1px solid black;
+    display: flex; 
+    justify-content: center;
+      
+}
+
+.nav-item{
+margin-right: 15px;
+      
+}
+
+.resource2{
+    display: none;
+}
+
+
 .hide {
     display: none;
 }
+
