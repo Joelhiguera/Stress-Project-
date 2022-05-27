@@ -1,3 +1,4 @@
+
 body {
     max-width: 100%;
     overflow-x: hidden;
@@ -30,4 +31,8 @@ margin-right: 15px;
     display: none;
 }
 
+
+.hide {
+    display: none;
+}
 
