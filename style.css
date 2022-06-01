@@ -1,6 +1,7 @@
 /* Media queries for foundation overrides. Otherwise foundation included breakpoints
 that can be set from element class attributes. This is based on a mobile-first mindset.*/
 
+/* Mobile, although affects everything if no override is set. */
 body {
     max-width: 100%;
     overflow-x: hidden;
@@ -59,7 +60,7 @@ margin-right: 15px;
 
 /* -------------------------------------------------------------------------------- */
 /* px values chosen are based on medium and large values associated with Foundation */
-/* Refer https://get.foundation/sites/docs/media-queries.html */
+/* Refer to: https://get.foundation/sites/docs/media-queries.html */
 
 /* Tablet */
 @media screen and (min-width: 640px) {
