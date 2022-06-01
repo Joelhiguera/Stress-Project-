@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <title>Stress Quiz</title>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="./reset.css"/>
   <!-- Compressed CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
   <!-- Need CSS framework other than Bootstrap. -->
   <link rel="stylesheet" href="./style.css"/>
  
 <!-- Compressed JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
+  <!-- Header with placeholder elements for future development. Could make them clickable,
+  interactive, link to an area of the page, to a different page, restart the quiz, etc. -->
   <header>
     <div class = "row">
       <div class = "nav-left">
@@ -34,93 +37,98 @@
   <section class="resource2">
     <div class="resource-page">
     <h2 class="navigation-header">Resources </h2>
-  </div>
-  <div id="nav-pages">
-    <p class="nav-item">Meditations</p>
-    <p class="nav-item">Videos</p>
-    <p class="nav-item">Articles</p>
-    <p class="nav-item">Hotlines</p>
-  </div>
-</section>
+    </div>
+    <div id="nav-pages">
+      <p class="nav-item">Meditations</p>
+      <p class="nav-item">Videos</p>
+      <p class="nav-item">Articles</p>
+      <p class="nav-item">Hotlines</p>
+    </div>
+  </section>
 
 
   <section id="questions" class="">
     
-  
+    <!-- Questions pertaining to a users mental health -->
+    <div id="question-1" class=" card" style="width: 400px;">
+      <h4>In the last month, how often have you felt nervous and “stressed”?</h4>
+          <div class="card-divider">
+              <div class="button-group">
+                <a class="button">One</a>
+                <a class="button">Two</a>
+                <a class="button">Three</a>
+                <a class="button">Four</a>
+                <a class="button">Five</a>
+              </div>
+          </div>
+    </div>
 
-  <div id="question-1" class=" card" style="width: 400px;">
-    <h4>In the last month, how often have you felt nervous and “stressed”?</h4>
-        <div class="card-divider">
-            <div class="button-group">
-              <a class="button">One</a>
-              <a class="button">Two</a>
-              <a class="button">Three</a>
-              <a class="button">Four</a>
-              <a class="button">Five</a>
-            </div>
-        </div>
-  </div>
+    <div id="question-2" class=" card" style="width: 400px;">
+      <h4>In the last month, how often have you felt confident about your ability
+        to handle your personal problems?</h4>
+          <div class="card-divider">
+              <div class="button-group">
+                <a class="button">One</a>
+                <a class="button">Two</a>
+                <a class="button">Three</a>
+                <a class="button">Four</a>
+                <a class="button">Five</a>
+              </div>
+          </div>
+    </div>
 
-  <div id="question-2" class=" card" style="width: 400px;">
-    <h4>In the last month, how often have you felt confident about your ability
-      to handle your personal problems?</h4>
-        <div class="card-divider">
-            <div class="button-group">
-              <a class="button">One</a>
-              <a class="button">Two</a>
-              <a class="button">Three</a>
-              <a class="button">Four</a>
-              <a class="button">Five</a>
-            </div>
-        </div>
-  </div>
+    <div id="question-3" class=" card" style="width: 400px;">
+      <h4>In the last month, how often have you been able
+        to control irritations in your life?</h4>
+          <div class="card-divider">
+              <div class="button-group">
+                <a class="button">One</a>
+                <a class="button">Two</a>
+                <a class="button">Three</a>
+                <a class="button">Four</a>
+                <a class="button">Five</a>
+              </div>
+          </div>
+    </div>
 
-  <div id="question-3" class=" card" style="width: 400px;">
-    <h4>In the last month, how often have you been able
-      to control irritations in your life?</h4>
-        <div class="card-divider">
-            <div class="button-group">
-              <a class="button">One</a>
-              <a class="button">Two</a>
-              <a class="button">Three</a>
-              <a class="button">Four</a>
-              <a class="button">Five</a>
-            </div>
-        </div>
-  </div>
+    <div id="question-4" class=" card" style="width: 400px;">
+      <h4>In the last month, how often have you felt difficulties
+        were piling up so high that you could not overcome them?</h4>
+          <div class="card-divider">
+              <div class="button-group">
+                <a class="button">One</a>
+                <a class="button">Two</a>
+                <a class="button">Three</a>
+                <a class="button">Four</a>
+                <a class="button">Five</a>
+              </div>
+          </div>
+    </div>
 
-  <div id="question-4" class=" card" style="width: 400px;">
-    <h4>In the last month, how often have you felt difficulties
-      were piling up so high that you could not overcome them?</h4>
-        <div class="card-divider">
-            <div class="button-group">
-              <a class="button">One</a>
-              <a class="button">Two</a>
-              <a class="button">Three</a>
-              <a class="button">Four</a>
-              <a class="button">Five</a>
-            </div>
-        </div>
-  </div>
+    <div id="question-5" class=" card" style="width: 400px;">
+      <h4>. In the last month, how often have you been angered
+        because of things that were outside of your control?</h4>
+          <div class="card-divider">
+              <div class="button-group">
+                <a class="button">One</a>
+                <a class="button">Two</a>
+                <a class="button">Three</a>
+                <a class="button">Four</a>
+                <a class="button">Five</a>
+              </div>
+          </div>
+    </div>
 
-  <div id="question-5" class=" card" style="width: 400px;">
-    <h4>. In the last month, how often have you been angered
-      because of things that were outside of your control?</h4>
-        <div class="card-divider">
-            <div class="button-group">
-              <a class="button">One</a>
-              <a class="button">Two</a>
-              <a class="button">Three</a>
-              <a class="button">Four</a>
-              <a class="button">Five</a>
-            </div>
-        </div>
-  </div>
+    <!-- What happens when a question is answered? What happens when all questions are answered?
+    page direction? New section pops with information? What is added dynamically via 
+    JavaScript? -->
 
-</section>
+  </section>
 
+  <!-- quiz-end = placeholder id tag.  -->
+  <section id="quiz-end">
 
-
+  </section>
 
 
 

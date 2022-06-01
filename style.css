@@ -1,15 +1,18 @@
+/* Media queries for foundation overrides. Otherwise foundation included breakpoints
+that can be set from element class attributes. This is based on a mobile-first mindset.*/
 
+/* Mobile, although affects everything if no override is set via the media queries. */
 body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
-.resource-page{
+.resource-page {
     display: flex;
     justify-content: center;
 }
 
-.navigation-header{
+.navigation-header {
   text-align: center;
     margin-top: 40px;
 
@@ -27,26 +30,26 @@ body {
 }
 
 .nav-left {
-  margin-left: 10rem;
+  margin: 0 5rem 0 10rem;
 }
 
 .nav-right {
-  margin-right: 10rem;
+  margin: 0 10rem 0 5rem;
 }
 
- #nav-pages{ 
+ #nav-pages { 
     border: 1px solid black;
     display: flex; 
     justify-content: center;
       
 }
 
-.nav-item{
+.nav-item {
 margin-right: 15px;
-      
+
 }
 
-.resource2{
+.resource2 {
     display: none;
 }
 
@@ -55,3 +58,19 @@ margin-right: 15px;
     display: none;
 }
 
+/* -------------------------------------------------------------------------------- */
+/* px values chosen are based on medium and large values associated with Foundation */
+/* Refer to: https://get.foundation/sites/docs/media-queries.html */
+
+/* Tablet */
+@media screen and (min-width: 640px) {
+  
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+}
