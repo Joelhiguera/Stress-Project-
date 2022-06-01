@@ -1,7 +1,7 @@
 /* Media queries for foundation overrides. Otherwise foundation included breakpoints
 that can be set from element class attributes. This is based on a mobile-first mindset.*/
 
-/* Mobile, although affects everything if no override is set. */
+/* Mobile, although affects everything if no override is set via the media queries. */
 body {
     max-width: 100%;
     overflow-x: hidden;
