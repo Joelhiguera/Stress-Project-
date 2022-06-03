@@ -15,6 +15,30 @@ body {
 
 }
 
+.meditation-header{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.meditation-quote{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.video-box-1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 500px;
+    height: 500px;
+    background-color: lightblue;
+}
+
+.video-boxes{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
  #nav-pages{ 
     border: 1px solid black;
     display: flex; 
@@ -24,11 +48,14 @@ body {
 
 .nav-item{
 margin-right: 15px;
+width: auto;
+background-color: blue;
+cursor: pointer;
       
 }
 
 .resource2{
-    display: none;
+  
 }
 
 
