@@ -46,7 +46,23 @@ body {
       
 }
 
-#question-header {
+#q1-header {
+  border-bottom: 1px solid black;
+}
+
+#q2-header {
+  border-bottom: 1px solid black;
+}
+
+#q3-header {
+  border-bottom: 1px solid black;
+}
+
+#q4-header {
+  border-bottom: 1px solid black;
+}
+
+#q5-header {
   border-bottom: 1px solid black;
 }
 
