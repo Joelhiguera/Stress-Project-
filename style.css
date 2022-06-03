@@ -39,11 +39,27 @@ body {
   width: 20%;
 }
 
- #nav-pages { 
+#nav-pages { 
     border: 1px solid black;
     display: flex; 
     justify-content: center;
       
+}
+
+#question-header {
+  border-bottom: 1px solid black;
+}
+
+div > h4 {
+  font-size: 1.25em;
+  font-weight: 350;
+}
+
+div > button {
+  padding: 5px 20px 5px 20px;
+  border: solid black 2px;
+  border-radius: 8px;
+  background-color: lightgray;
 }
 
 .nav-item {
