@@ -48,7 +48,7 @@ function getVideosByKeyword(grabUrl) {
       var vidId = data.items[i].id.videoId
       var vidTitle = data.items[i].snippet.title
 
-      $(vidList).append('<li><a data-fancybox href="https://www.youtube.com/watch?v=' + vidId + '">' + vidTitle + '</a></li>')
+      $(vidList).append('<li><a target="_blank" href="https://www.youtube.com/watch?v=' + vidId + '">' + vidTitle + '</a></li>')
     }
 
 
