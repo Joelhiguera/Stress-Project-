@@ -50,10 +50,7 @@ function getVideosByKeyword(grabUrl) {
 
       $(vidList).append('<li><a target="_blank" href="https://www.youtube.com/watch?v=' + vidId + '">' + vidTitle + '</a></li>')
     }
-
-
   })
-
 }
 
   // ---- NOTES -------------------------------------------------------------------------------------------------------------------------
