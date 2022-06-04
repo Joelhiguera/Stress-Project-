@@ -16,9 +16,14 @@ var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
 // https://developers.google.com/youtube/v3/guides/implementation/search
 
 // Something like:
+// '????' What specifically are we searching for, and when?
 function getVideosByKeyword(grabUrl) {
-  var grabUrl = "https://www.googleapis.com/youtube/v3/search" // Variables for search queries in the parameter.
-  
+  var grabUrl = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=  ????  &type=video&videoDefinition=high&key=" + APIKey 
+
+  // https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=testing&type=video&videoDefinition=high&key=AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM
+  // For testing. Works. Need to access the information, and then put the relevant information somewhere on the document.
+
+  // %20 designates spaces in this particular api
   // Find parameters based on the first refer link above.
   // Parameter notes: q= ; is the search query.
   // maxResults= ; can set a number for maximum results.
