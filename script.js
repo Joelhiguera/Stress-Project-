@@ -18,11 +18,24 @@ var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
 // Something like:
 // '????' What specifically are we searching for, and when?
 function getVideosByKeyword(grabUrl) {
-  var grabUrl = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=  ????  &type=video&videoDefinition=high&key=" + APIKey 
+  var grabUrl = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=calming%20exercises&type=video&videoDefinition=high&key=" + APIKey 
 
-  // https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=testing&type=video&videoDefinition=high&key=AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM
+  // https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=15&order=viewCount&q=calming%20exercises&type=video&videoDefinition=high&key=AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM
   // For testing. Works. Need to access the information, and then put the relevant information somewhere on the document.
 
+  // Then fetch the variable.
+  fetch(grabCurrentUrl)
+  .then(function (response) {
+    return response.json();
+  })
+  .then (function (data) {
+    console.log(data)
+
+  })
+
+}
+
+  // ---- NOTES -------------------------------------------------------------------------------------------------------------------------
   // %20 designates spaces in this particular api
   // Find parameters based on the first refer link above.
   // Parameter notes: q= ; is the search query.
@@ -30,7 +43,3 @@ function getVideosByKeyword(grabUrl) {
   // key= ; the API key.
   // part=snippet ; is a required parameter that specifies a comma-separated list of one or
   // more search resource properties the API response will include. Set value to snippet
-  // My understanding is that Snippet basically makes a small iframe for the search criteria
-
-  // Then fetch the variable.
-}
