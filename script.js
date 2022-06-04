@@ -17,6 +17,7 @@ var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
 
 // Something like:
 // '????' What specifically are we searching for, and when?
+// In particular, still need to nail down when we do any of this
 function getVideosByKeyword(grabUrl) {
   var grabUrl = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=calming%20exercises&type=video&videoDefinition=high&key=" + APIKey 
 
@@ -38,7 +39,8 @@ function getVideosByKeyword(grabUrl) {
   // ---- NOTES -------------------------------------------------------------------------------------------------------------------------
   // %20 designates spaces in this particular api
   // Find parameters based on the first refer link above.
-  // Parameter notes: q= ; is the search query.
+  // Parameter notes: 
+  // q= ; is the search query.
   // maxResults= ; can set a number for maximum results.
   // key= ; the API key.
   // part=snippet ; is a required parameter that specifies a comma-separated list of one or
