@@ -18,6 +18,14 @@ var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
 // Something like:
 // '????' What specifically are we searching for, and when?
 // In particular, still need to nail down when we do any of this
+
+// Keyword will variate based on the score of the completed quiz.
+// if less than 5, between 5 - 15, etc.
+// stress management techniques
+
+// Based on the score, should I call different functions? Or change the search query?
+// Leaning toward multiple functions.
+
 function getVideosByKeyword(grabUrl) {
   var grabUrl = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=calming%20exercises&type=video&videoDefinition=high&key=" + APIKey 
 
