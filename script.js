@@ -4,6 +4,8 @@ var question3 = document.getElementById("question-3")
 var question4 = document.getElementById("question-4")
 var question5 = document.getElementById("question-5")
 
+var vidList = document.getElementById("vid-list")
+
 var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
 
 // Access different buttons by child index?
@@ -28,23 +30,34 @@ var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
 
 function getVideosByKeyword(grabUrl) {
   var grabUrl = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=calming%20exercises&type=video&videoDefinition=high&key=" + APIKey 
+  // For the moment, 'calming%20exercises' is the placeholder search query
 
   // https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=15&order=viewCount&q=calming%20exercises&type=video&videoDefinition=high&key=AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM
   // For testing. Works. Need to access the information, and then put the relevant information somewhere on the document.
 
   // Then fetch the variable.
-  fetch(grabCurrentUrl)
+  fetch(grabUrl)
   .then(function (response) {
     return response.json();
   })
   .then (function (data) {
     console.log(data)
+    console.log(data.items[0].id.videoId)
+
+    for (var i = 0; i < data.items.length; i++) {
+      var vidId = data.items[i].id.videoId
+      var vidTitle = data.items[i].snippet.title
+
+      $(vidList).append('<li><a data-fancybox href="https://www.youtube.com/watch?v=' + vidId + '">' + vidTitle + '</a></li>')
+    }
+
 
   })
 
 }
 
   // ---- NOTES -------------------------------------------------------------------------------------------------------------------------
+  // By default the API will return the first 5 results.
   // %20 designates spaces in this particular api
   // Find parameters based on the first refer link above.
   // Parameter notes: 
@@ -53,3 +66,5 @@ function getVideosByKeyword(grabUrl) {
   // key= ; the API key.
   // part=snippet ; is a required parameter that specifies a comma-separated list of one or
   // more search resource properties the API response will include. Set value to snippet
+
+getVideosByKeyword();
