@@ -88,4 +88,5 @@ function getVideosByKeyword(grabUrl) {
   // part=snippet ; is a required parameter that specifies a comma-separated list of one or
   // more search resource properties the API response will include. Set value to snippet
 
-getVideosByKeyword();
+// Commented out until I have a place to put the results.
+// getVideosByKeyword();
