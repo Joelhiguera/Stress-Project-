@@ -2,6 +2,7 @@
 that can be set from element class attributes. This is based on a mobile-first mindset.*/
 
 /* Mobile, although affects everything if no override is set via the media queries. */
+/* Mobile md: */
 body {
     max-width: 100%;
     overflow-x: hidden;
@@ -203,7 +204,7 @@ margin-right: 15px;
 /* px values chosen are based on medium and large values associated with Foundation */
 /* Refer to: https://get.foundation/sites/docs/media-queries.html */
 
-/* Tablet md */
+/* Tablet md: */
 @media screen and (min-width: 768px) {
   
 }  
@@ -211,7 +212,7 @@ margin-right: 15px;
 /* -------------------------------------------------------------------------------- */
 
 
-/* Desktop lg*/
+/* Desktop lg: */
 @media screen and (min-width: 1024px) {
   .customWidth {
     width: 48%;
