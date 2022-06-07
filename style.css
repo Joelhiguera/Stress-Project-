@@ -2,6 +2,7 @@
 that can be set from element class attributes. This is based on a mobile-first mindset.*/
 
 /* Mobile, although affects everything if no override is set via the media queries. */
+
 /* Mobile md: */
 body {
     max-width: 100%;
@@ -206,7 +207,9 @@ margin-right: 15px;
 
 /* Tablet md: */
 @media screen and (min-width: 768px) {
-  
+  .customWidth {
+    width: 100%;
+  }
 }  
 
 /* -------------------------------------------------------------------------------- */
