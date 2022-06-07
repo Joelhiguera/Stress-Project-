@@ -84,35 +84,8 @@ margin-right: 15px;
 }
 
 .resource2 {
-    
-}
-
-
-.hide {
     display: none;
 }
-/* -------------------------------------------------------------------------------- */
-/* px values chosen are based on medium and large values associated with Foundation */
-/* Refer to: https://get.foundation/sites/docs/media-queries.html */
-
-/* Tablet */
-@media screen and (min-width: 640px) {
-  
-}
-
-/* -------------------------------------------------------------------------------- */
-
-
-/* Desktop */
-@media screen and (min-width: 1024px) {
-
-}
-
-
-
-
-
-
 
 .meditation-header {
   text-align: center;
@@ -210,5 +183,39 @@ margin-right: 15px;
     color: white;
     cursor: pointer;
   }
+
+  #map {
+    width: 100%;
+    height: 800px;
+    display: none;
+ 
+  }
+
+
+
+.hide {
+    display: none;
+}    
+/* -------------------------------------------------------------------------------- */
+/* px values chosen are based on medium and large values associated with Foundation */
+/* Refer to: https://get.foundation/sites/docs/media-queries.html */
+
+/* Tablet */
+@media screen and (min-width: 640px) {
+  
+}  
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+}  
+
+
+
+
+
 
 
