@@ -21,15 +21,70 @@ function initMap() {
     center: utah,
   });
   // The marker, positioned at 
-  new google.maps.Marker({
-    position: utah,
-    map: map,
-  });
+
 
   new google.maps.Marker({
-      position: {lat:40.133, lng:-111.87754869011466},
+      position: {lat:41.0799789688119, lng:-111.9645254730709},
       map: map,
     });
+    new google.maps.Marker({
+        position: {lat:40.75412999847983, lng:-111.84642245520773},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.74996869807189, lng:-111.92058016409855},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.71875064410805, lng:-111.97001863669244},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.689600578890634, lng:-111.93431307315241},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.689600578890634, lng:-111.93980623677395},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.41203897892292,lng: -111.77501132812768},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.3994902893059, lng:-111.74205234639842},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.3576444289362, lng:-111.68986729199378},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.3488965233879, lng:-111.70207251840117},
+        map: map,
+      });
+      new google.maps.Marker({
+        position: {lat:40.305767209862935, lng:-111.67978601049028},
+        map: map,
+      });
+
+      new google.maps.Marker({
+        position: {lat:40.299230061346606, lng:-111.6780716637279},
+        map: map,
+      });
+
+      new google.maps.Marker({
+        position: {lat:40.24653152066559, lng:-111.69063867495234},
+        map: map,
+      });
+
+      new google.maps.Marker({
+        position: {lat:40.14345218864863, lng:-111.72565518394136},
+        map: map,
+      });
+
+
+
 }
 
 
