@@ -76,6 +76,8 @@ div > button {
   border: solid black 2px;
   border-radius: 8px;
   background-color: lightgray;
+  width: 95%;
+  height: 45px;
 }
 
 .nav-item {
@@ -166,7 +168,9 @@ margin-right: 15px;
   color: white;
 }
 
-
+.quiz-buttons {
+  margin: 15px 0 15px 0;
+}
 
 .article-nav-item {
   margin-right: 15px;
