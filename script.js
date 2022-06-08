@@ -8,6 +8,8 @@ var vidList = document.getElementById("vid-list")
 
 var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
 
+var score;
+
 // Access different buttons by child index?
 // Will eventually need at least two fetch requests using different APIs
 // How will we recognize quiz 'score'?
@@ -145,3 +147,224 @@ function getVideosByKeyword(grabUrl) {
 
 // Commented out until I have a place to put the results.
 // getVideosByKeyword();
+
+
+
+
+
+// quiz JS
+
+
+
+var button1 = document.getElementById('btn-1');
+var button2 = document.getElementById('btn-2');
+var button3 = document.getElementById('btn-3');
+var button4 = document.getElementById('btn-4');
+var button5 = document.getElementById('btn-5');
+var questions = document.getElementById('questions')
+
+var score = sessionStorage
+
+
+
+// variables for test results 
+
+var lowStress
+var medStress
+var highStress
+var extremeStress
+
+
+var button1 = document.getElementById('btn-1');
+var button2 = document.getElementById('btn-2');
+var button3 = document.getElementById('btn-3');
+var button4 = document.getElementById('btn-4');
+var button5 = document.getElementById('btn-5');
+
+
+var button6 = document.getElementById('btn2-1');
+var button7 = document.getElementById('btn2-2');
+var button8 = document.getElementById('btn2-3');
+var button9 = document.getElementById('btn2-4');
+var button10 = document.getElementById('btn2-5');
+
+var button11 = document.getElementById('btn3-1');
+var button12 = document.getElementById('btn3-2');
+var button13 = document.getElementById('btn3-3');
+var button14 = document.getElementById('btn3-4');
+var button15 = document.getElementById('btn3-5');
+
+var button16 = document.getElementById('btn4-1');
+var button17 = document.getElementById('btn4-2');
+var button18 = document.getElementById('btn4-3');
+var button19 = document.getElementById('btn4-4');
+var button20 = document.getElementById('btn4-5');
+
+var button21 = document.getElementById('btn5-1');
+var button22 = document.getElementById('btn5-2');
+var button23 = document.getElementById('btn5-3');
+var button24 = document.getElementById('btn5-4');
+var button25 = document.getElementById('btn5-5');
+
+var score = sessionStorage
+
+
+
+// variables for test results 
+
+var lowStress
+var medStress
+var highStress
+var extremeStress
+
+//Question 1
+
+button1.addEventListener('click', function() {
+ 
+  score = 1
+
+  question1Hide();
+
+})
+
+
+button2.addEventListener('click', function() {
+ 
+  score = 2
+
+  question1Hide();
+
+})
+
+
+button3.addEventListener('click', function() {
+ 
+  score = 3
+
+  question1Hide();
+
+})
+
+
+button4.addEventListener('click', function() {
+ 
+  score = 4
+
+  question1Hide();
+
+})
+
+
+button5.addEventListener('click', function() {
+ 
+  score = 5
+
+  question1Hide();
+
+})
+
+//question 2
+
+button6.addEventListener('click', function() {
+ 
+  problems = 1
+
+  question2Hide();
+
+})
+
+button7.addEventListener('click', function() {
+ 
+  problems = 2
+
+  question2Hide();
+
+})
+
+button8.addEventListener('click', function() {
+ 
+  problems = 3
+
+  question2Hide();
+
+})
+
+button9.addEventListener('click', function() {
+ 
+  problems = 4
+
+  question2Hide();
+
+})
+
+button10.addEventListener('click', function() {
+ 
+  problems = 5
+
+  question2Hide();
+
+})
+
+function question1Hide() {
+  question1.classList.add("hide")
+
+  question2.classList.remove("hide")
+}
+
+function question2Hide() {
+  question2.classList.add("hide")
+
+  question3.classList.remove("hide")
+}
+
+function question3Hide() {
+  question3.classList.add("hide")
+
+  question4.classList.remove("hide")
+}
+
+function question4Hide() {
+  question4.classList.add("hide")
+
+  question5.classList.remove("hide")
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+// Access different buttons by child index?
+// Will eventually need at least two fetch requests using different APIs
+// How will we recognize quiz 'score'?
+
+// PSUEDO CODE FOR TEST RESULTS 
+
+/* If your score is betwen 1-7 = low stress
+   If your score is betwwen 8-16 = medium stress
+   If your score is between 17-24 = High Stress
+   If your score is 25 = Extreme Stress */
+
+   /* if you select button 5, + 5 points
+      If you select button 4, + 4 points
+      If you select button 3, + 3 points 
+      If you select button 2,  +2 points
+      If you select button 1,   +1 point */
+
+
+
