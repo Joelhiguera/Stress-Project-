@@ -20,10 +20,10 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script> -->
 </head>
 
-<body>
+<body class="bg-white-300">
   <!-- Header with placeholder elements for future development. Could make them clickable,
   interactive, link to an area of the page, to a different page, restart the quiz, etc. -->
-  <header id = "row" class =  "flex justify-center items-center">
+  <!-- <header id = "row" class =  "flex justify-center items-center">
       <div id = "nav-left" class = "flex justify-center items-center">
         <h3 id = "left-head">placeholder</h3>
       </div>
@@ -36,7 +36,24 @@
         <h3 id = right-head>placeholder</h3>
       </div>
     </div>
-  </header>
+  </header> -->
+
+  <nav class="bg-blue-300 p-5 shadow md:flex md:items-center md:justify-between">
+    <div>
+      <span class="text-2xl font-arial">STRESS TEST</span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static">
+      <li class="mx-4 my-6 md:my-0"><a href="#" class="duration text-xl hover:text-cyan-500">HOME</a></li>
+      <li class="mx-4 my-6 md:my-0"><a href="#" class="duration text-xl hover:text-cyan-500">SERVICE</a></li>
+      <li class="mx-4 my-6 md:my-0"><a href="#" class="duration text-xl hover:text-cyan-500">ABOUT</a></li>
+      <li class="mx-4 my-6 md:my-0"><a href="#" class="duration text-xl hover:text-cyan-500">CONTACT</a></li>
+      
+
+      <button class="bg-blue-900 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500">Stress Quiz</button>
+    </ul>
+  </nav>
+
  
   <section class="resource2">
       <div class="resource-page">
@@ -80,87 +97,87 @@
   <section id="questions" class="flex-col relative p-10 m-5 border-2 border-solid border-black">
     
     <!-- Questions pertaining to a users mental health -->
-    <div id = "question-1" class="customWidth flex-col border-2 border-solid border-black">
+    <div id = "question-1" class="custom Width flex-col border-2 border-solid border-black">
       <div id = "q1-header" class = "w-full p-1">
         <h4 class = "text-center">Question 1: In the last month, how often have you felt nervous and “stressed”?</h4>
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div  class="quiz-buttons"><button  id="btn-1" value="1">One</button></div>
-              <div  class="quiz-buttons"><button  id="btn-2" value="1">Two</button></div>
-              <div  class="quiz-buttons"><button  id="btn-3" value="1">Three</button></div>
-              <div  class="quiz-buttons"><button  id="btn-4" value="1">Four</button></div>
-              <div  class="quiz-buttons"><button  id="btn-5" value="1">Five</button></div>
+              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-1" >One</button></div>
+              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-2" >Two</button></div>
+              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-3" >Three</button></div>
+              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-4" >Four</button></div>
+              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-5" >Five</button></div>
             </div>
           </div>
     </div>
 
-    <div id = "question-2" class="hide customWidth flex-col border-2 border-solid border-black">
+    <div id = "question-2" class="hide custom Width flex-col border-2 border-solid border-black">
       <div id = "q2-header" class = "w-full p-1">
         <h4 class = "text-center">Question 2: In the last month, how often have you felt confident about your ability
           to handle your personal problems?</h4>
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div class="quiz-buttons"><button id="btn2-1" >One</button></div>
-              <div class="quiz-buttons"><button id="btn2-2">Two</button></div>
-              <div class="quiz-buttons"><button id="btn2-3">Three</button></div>
-              <div class="quiz-buttons"><button id="btn2-4">Four</button></div>
-              <div class="quiz-buttons"><button id="btn2-5">Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-1" >One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-2">Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-3">Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-4">Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-5">Five</button></div>
             </div>
           </div>
     </div>
 
-    <div id = "question-3" class="hide customWidth flex-col border-2 border-solid border-black">
+    <div id = "question-3" class="hide custom Width flex-col border-2 border-solid border-black">
       <div id = "q3-header" class = "w-full p-1">
         <h4 class = "text-center">Question 3: In the last month, how often have you been able
           to control irritations in your life?</h4>
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div class="quiz-buttons"><button id="btn3-1">One</button></div>
-              <div class="quiz-buttons"><button id="btn3-2">Two</button></div>
-              <div class="quiz-buttons"><button id="btn3-3">Three</button></div>
-              <div class="quiz-buttons"><button id="btn3-4">Four</button></div>
-              <div class="quiz-buttons"><button id="btn3-5">Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-1">One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-2">Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-3">Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-4">Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-5">Five</button></div>
             </div>
           </div>
     </div>
 
-    <div id = "question-4" class="hide customWidth flex-col border-2 border-solid border-black">
+    <div id = "question-4" class="hide custom Width flex-col border-2 border-solid border-black">
       <div id = "q4-header" class = "w-full p-1">
         <h4 class = "text-center">Question 4: In the last month, how often have you felt difficulties
           were piling up so high that you could not overcome them?</h4>
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div class="quiz-buttons"><button id="btn4-1">One</button></div>
-              <div class="quiz-buttons"><button id="btn4-2">Two</button></div>
-              <div class="quiz-buttons"><button id="btn4-3">Three</button></div>
-              <div class="quiz-buttons"><button id="btn4-4">Four</button></div>
-              <div class="quiz-buttons"><button id="btn4-5">Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-1">One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-2">Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-3">Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-4">Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-5">Five</button></div>
             </div>
           </div>
     </div>
 
-    <div id = "question-5" class="hide customWidth flex-col border-2 border-solid border-black">
+    <div id = "question-5" class="hide custom Width flex-col border-2 border-solid border-black">
       <div id = "q5-header" class = "w-full p-1">
         <h4 class = "text-center">Question 5: In the last month, how often have you been angered
           because of things that were outside of your control?</h4>
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div class="quiz-buttons"><button id="btn5-1">One</button></div>
-              <div class="quiz-buttons"><button id="btn5-2">Two</button></div>
-              <div class="quiz-buttons"><button id="btn5-3">Three</button></div>
-              <div class="quiz-buttons"><button id="btn5-4">Four</button></div>
-              <div class="quiz-buttons"><button id="btn5-5">Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-1">One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-2">Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-3">Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-4">Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-5">Five</button></div>
             </div>
           </div>
     </div>
 
 
-    <div id = "results" class="hide w-1/2 flex-col border-2 border-solid border-black">
+    <div id = "results" class="hide bg-red-500 custom Width flex-col border-2 border-solid border-black">
       <div id = "q5-header" class = "w-full p-1">
         <h4 class = "text-center">Here are your results: <span id="score"> </span></h4>
        </div>
