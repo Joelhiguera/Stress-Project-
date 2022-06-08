@@ -19,4 +19,4 @@ Screenshot: ![Site Screenshot](./Screenshot/StressTest.jpeg)
 >
 >[Script](./Assets/js/script.js)
 
-Live Site: Wait
+Live Site: https://joelhiguera.github.io/Stress-Project-/
