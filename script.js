@@ -4,6 +4,7 @@ var question3 = document.getElementById("question-3")
 var question4 = document.getElementById("question-4")
 var question5 = document.getElementById("question-5")
 
+
 var vidList = document.getElementById("vid-list")
 
 var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
@@ -206,9 +207,11 @@ var button23 = document.getElementById('btn5-3');
 var button24 = document.getElementById('btn5-4');
 var button25 = document.getElementById('btn5-5');
 
+
 var result = document.getElementById("results");
 
 document.getElementById("score").innerHTML = "Stress out of my mind!";
+
 
 var score = sessionStorage
 
@@ -267,7 +270,9 @@ button5.addEventListener('click', function() {
 
 })
 
+
 //-----------------------------------question 2
+
 
 button6.addEventListener('click', function() {
  
@@ -309,7 +314,9 @@ button10.addEventListener('click', function() {
 
 })
 
+
 // question 3----------------------------------------
+
 
 button11.addEventListener('click', function() {
  
@@ -351,7 +358,9 @@ button15.addEventListener('click', function() {
 
 })
 
+
 //question4---------------------------------------------------------
+
 
 button16.addEventListener('click', function() {
  
@@ -393,13 +402,17 @@ button20.addEventListener('click', function() {
 
 })
 
+
 //question 5--------------------------------------------
+
 
 button21.addEventListener('click', function() {
  
   problems = 1
 
+
   results()
+
 
 })
 
@@ -407,7 +420,9 @@ button22.addEventListener('click', function() {
  
   problems = 2
 
+  
   results()
+
 
 })
 
@@ -415,7 +430,9 @@ button23.addEventListener('click', function() {
  
   problems = 3
 
+
   results()
+
 
 })
 
@@ -423,7 +440,9 @@ button24.addEventListener('click', function() {
  
   problems = 4
 
+
   results()
+
 
 })
 
@@ -431,9 +450,11 @@ button25.addEventListener('click', function() {
  
   problems = 5
 
+
   results()
 
 })
+
 
 function question1Hide() {
   question1.classList.add("hide")
@@ -473,6 +494,12 @@ function results() {
 
 function addScore() {
   score = score
+}
+
+function showResults() {
+  question5.classList.add("hide")
+
+  results.classList.remove("hide")
 }
 
 
