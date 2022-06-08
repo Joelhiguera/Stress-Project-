@@ -23,7 +23,7 @@
 <body>
   <!-- Header with placeholder elements for future development. Could make them clickable,
   interactive, link to an area of the page, to a different page, restart the quiz, etc. -->
-  <header id = "row" class =  "flex justify-center items-center">
+  <header id = "row" class =  "relative flex justify-center items-center">
       <div id = "nav-left" class = "flex justify-center items-center">
         <h3 id = "left-head">placeholder</h3>
       </div>
@@ -36,46 +36,25 @@
         <h3 id = right-head>placeholder</h3>
       </div>
     </div>
+
   </header>
  
-  <section class="resource2">
-      <div class="resource-page">
-        <h2 class="navigation-header">Resources(better name for header?) </h2>
-      </div>
-    <div id="nav-pages">
-      <button class="nav-item">Meditations</button>
-      <button class="nav-item">Treatment Locations</button>
-      <button class="nav-item">Hotlines</button>
-    </div> 
+    <nav>
+      <div id="nav-pages">
+        <button class="nav-item">Meditations</button>
+        <button id="treatment" class="nav-item">Treatment Locations</button>
+        <button class="nav-item">Hotlines</button>
+      </div> 
+    </nav>
+
   
-    <div class="meditations">
-      <h2 class="meditation-header">Meditation of the day</h2>
-      <div class="med-nav">
-        <button class="med-nav-item">Treatment Locations</button>
-        <button class="med-nav-item">Hotlines</button>
+      <div id="showMap" class="articles hide">
+        <h2 id="mapHeader" class="article-header">Treatment Locations</h2>
+        <div id="map">
+
+        </div>
       </div>
-      <p class="meditation-quote">enter cool quote about meditation</p>
-      <div class="video-boxes">
-      <p class="video-box-1">video here</p>
-      </div>
-    </div>
-  
-     <div class="articles">
-      <h2 class="article-header">Treatment Locations</h2>
-      <div class="article-nav">
-        <button class="article-nav-item">Meditations</button>
-        <button class="article-nav-item">Hotlines</button>
-      </div>
-      <div id="map"></div>
-    </div>
-    <div class="hotlines">
-      <h2 class="hotline-header">Hotlines</h2>
-      <div class="hotline-nav">
-        <button class="hotline-nav-item">Meditations</button>
-        <button class="hotline-nav-item">Treatment Locations</button>
-      </div>
-    </div>
-  </section>
+
 
   <section id="questions" class="flex-col relative p-10 m-5 border-2 border-solid border-black">
     
