@@ -4,10 +4,10 @@
 
 >**Our Group Consisted of:**
 >
->Joel Higuera
->Sage Kirby
->Holden Atkinson
->Jayden Griffith
+>Joel Higuera <br />
+>Sage Kirby <br />
+>Holden Atkinson <br />
+>Jayden Griffith <br />
 
 Screenshot: ![Site Screenshot](./Screenshot/StressTest.jpeg)
 
