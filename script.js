@@ -14,6 +14,12 @@ var score;
 // Will eventually need at least two fetch requests using different APIs
 // How will we recognize quiz 'score'?
 
+var quizMain = document.getElementById("quizMainBtn")
+
+quizMain.addEventListener('click', function() {
+  location.reload()
+})
+
 var trtLocations = document.getElementById("treatment")
 var mapShow = document.getElementById("showMap")
 
@@ -24,6 +30,19 @@ trtLocations.addEventListener('click', function() {
   } else {
     mapShow.classList.add('hide')
     trtLocations.classList.remove('active')
+  }
+})
+
+var htliResource = document.getElementById("hotlines")
+var htliContainer = document.getElementById("showHotlines")
+
+htliResource.addEventListener('click', function() {
+  if (htliContainer.classList.contains('hide')) {
+    htliContainer.classList.remove('hide')
+    htliResource.classList.add('active')
+  } else {
+    htliContainer.classList.add('hide')
+    htliResource.classList.remove('active')
   }
 })
 
@@ -159,7 +178,7 @@ function getVideosByKeyword(grabUrl) {
       var vidId = data.items[i].id.videoId
       var vidTitle = data.items[i].snippet.title
 
-      $(vidList).append('<li><a target="_blank" href="https://www.youtube.com/watch?v=' + vidId + '">' + vidTitle + '</a></li><hr>')
+      $(vidList).append('<hr><li><a target="_blank" href="https://www.youtube.com/watch?v=' + vidId + '">' + vidTitle + '</a></li><hr>')
     }
   })
 }

@@ -23,11 +23,11 @@
 
     <ul class="md:flex md:items-center z-[-1] md:z-auto md:static">
       <li class="mx-4 my-6 md:my-0"><a id="treatment" class="cursor-pointer duration text-xl hover:text-cyan-500">TREATMENT LOCATIONS</a></li>
-      <li class="mx-4 my-6 md:my-0"><a id="hotlines" class="cursor-pointer duration text-xl hover:text-cyan-500">HOTLINES</a></li>
+      <li class="mx-4 my-6 md:my-0"><a id="hotlines" class="cursor-pointer duration text-xl hover:text-cyan-500">HOTLINES AND RESOURCES</a></li>
       <li class="mx-4 my-6 md:my-0"><a id="stressVids" class="cursor-pointer duration text-xl hover:text-cyan-500">STRESS RELIEF VIDEOS</a></li>
       
 
-      <button class="bg-blue-900 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500">Stress Quiz</button>
+      <button id = "quizMainBtn" class="bg-blue-900 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500">Stress Quiz</button>
     </ul>
   </nav>
 
@@ -37,6 +37,19 @@
 
           </div>
     </div>
+
+    <div id="showHotlines" class="hotlinesList hide">
+      <h2 id="hotlinesHeader" class="text-center">Hotlines and Resources</h2>
+        <ul id = "hot-list" class = "hlList">
+            <hr>
+          <li>National Suicide Prevention Lifeline: 1-800-273-8255</li>
+            <hr>
+          <li>Utah Crisis Line: (800)273-8255</li>
+            <hr>
+          <li><a href="https://dsamh.utah.gov/">Utah Department of Human Services</a>: 801-538-3939</li>
+            <hr> 
+        </ul>
+    </div> 
 
       
     <div id = "media-list-output" class = "mediaList hide">

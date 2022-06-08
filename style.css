@@ -212,24 +212,49 @@ div > button {
   }
   
   #mapHeader,
-  #videosHeader {
+  #videosHeader,
+  #hotlinesHeader {
     font-size: 1.5em;
     font-weight: 600;
   }
 
   .mediaList {
-    margin: 10px 1% 10px 1%;
+    margin: 10px 1.25rem 10px 1.25rem;
     border: solid 2px black;
     padding: 1%;
   }
+
+  .hotlinesList {
+    margin: 10px 1.25rem 10px 1.25rem;
+    border: solid 2px black;
+    padding: 1%;
+  }
+
+  .hlList {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hlList > li {
+    margin: 10px 0 10px 0
+  }
+
+  .hlList > li > a {
+    text-decoration: underline;
+    color: rgb(37, 77, 255)
+  }
+
 
   .videoList {
     text-align: center;
   }
 
+  .videoList > li {
+    margin: 10px 0 10px 0;
+  }
+
   .videoList > li > a {
     text-decoration: underline;
-    font-family: 'Arial Narrow', sans-serif;
     font-size: 18px;
     color: rgb(37, 77, 255)
   }
@@ -275,6 +300,15 @@ div > button {
     height: 350px;
   }
 
+  .mediaList {
+    margin: 10px 1.25rem 10px 1.25rem;
+    padding: 1%;
+  }
+
+  .hotlinesList {
+    margin: 10px 1.25rem 10px 1.25rem;
+    padding: 1%;
+  }
 }  
 
 /* -------------------------------------------------------------------------------- */
