@@ -6,27 +6,15 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="./reset.css"/>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/> -->
-  <!--Tailwind CDN-->
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style type="text/tailwindcss">
   /* Just in case we need to everride with in-line. */
   </style>
-
-  <!-- Need CSS framework other than Bootstrap. -->
   <link rel="stylesheet" href="./style.css"/>
- 
-<!-- Compressed JavaScript -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body class="bg-white-300">
-  <!-- Header with placeholder elements for future development. Could make them clickable,
-  interactive, link to an area of the page, to a different page, restart the quiz, etc. -->
-
-        <!-- <div id = "stress-quiz-header" class = "flex justify-center items-center">
-          <h1 id = "main-title" class = "px-20">Stress Quiz</h1>
-        </div> -->
 
   <nav class="bg-blue-300 p-5 shadow md:flex md:items-center md:justify-between">
     <div>
@@ -35,26 +23,47 @@
 
     <ul class="md:flex md:items-center z-[-1] md:z-auto md:static">
       <li class="mx-4 my-6 md:my-0"><a id="treatment" class="cursor-pointer duration text-xl hover:text-cyan-500">TREATMENT LOCATIONS</a></li>
-      <li class="mx-4 my-6 md:my-0"><a class="cursor-pointer duration text-xl hover:text-cyan-500">HOTLINES</a></li>
-      <li class="mx-4 my-6 md:my-0"><a class="cursor-pointer duration text-xl hover:text-cyan-500">STRESS RELIEF VIDEOS</a></li>
+      <li class="mx-4 my-6 md:my-0"><a id="hotlines" class="cursor-pointer duration text-xl hover:text-cyan-500">HOTLINES AND RESOURCES</a></li>
+      <li class="mx-4 my-6 md:my-0"><a id="stressVids" class="cursor-pointer duration text-xl hover:text-cyan-500">STRESS RELIEF VIDEOS</a></li>
       
 
-      <button class="bg-blue-900 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500">Stress Quiz</button>
+      <button id = "quizMainBtn" class="bg-blue-900 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500">Stress Quiz</button>
     </ul>
   </nav>
 
-      <div id="showMap" class="articles hide">
+    <div id="showMap" class="articles hide">
         <h2 id="mapHeader" class="article-header">Treatment Locations</h2>
-        <div id="map">
+          <div id="map">
 
-        </div>
-      </div>
+          </div>
+    </div>
+
+    <div id="showHotlines" class="hotlinesList hide">
+      <h2 id="hotlinesHeader" class="text-center">Hotlines and Resources</h2>
+        <ul id = "hot-list" class = "hlList">
+            <hr>
+          <li>National Suicide Prevention Lifeline: 1-800-273-8255</li>
+            <hr>
+          <li>Utah Crisis Line: (800)273-8255</li>
+            <hr>
+          <li><a href="https://dsamh.utah.gov/">Utah Department of Human Services</a>: 801-538-3939</li>
+            <hr> 
+        </ul>
+    </div> 
+
+      
+    <div id = "media-list-output" class = "mediaList hide">
+      <h2 id= "videosHeader" class = "text-center">Stress Relief Videos</h2>
+        <ul id = "vid-list" class = "videoList">
+
+        </ul>
+    </div>
 
 
   <section id="questions" class="flex-col relative p-10 m-5 border-2 border-solid border-black">
     
     <!-- Questions pertaining to a users mental health -->
-    <div id = "question-1" class="custom Width flex-col border-2 border-solid border-black">
+    <div id = "question-1" class="customWidth flex-col border-2 border-solid border-black">
       <div id = "q1-header" class = "w-full p-1">
         <h4 class = "text-center">Question 1: In the last month, how often have you felt nervous and “stressed”?</h4>
       </div>
@@ -69,7 +78,7 @@
           </div>
     </div>
 
-    <div id = "question-2" class="hide custom Width flex-col border-2 border-solid border-black">
+    <div id = "question-2" class="hide customWidth flex-col border-2 border-solid border-black">
       <div id = "q2-header" class = "w-full p-1">
         <h4 class = "text-center">Question 2: In the last month, how often have you felt confident about your ability
           to handle your personal problems?</h4>
@@ -85,7 +94,7 @@
           </div>
     </div>
 
-    <div id = "question-3" class="hide custom Width flex-col border-2 border-solid border-black">
+    <div id = "question-3" class="hide customWidth flex-col border-2 border-solid border-black">
       <div id = "q3-header" class = "w-full p-1">
         <h4 class = "text-center">Question 3: In the last month, how often have you been able
           to control irritations in your life?</h4>
@@ -101,7 +110,7 @@
           </div>
     </div>
 
-    <div id = "question-4" class="hide custom Width flex-col border-2 border-solid border-black">
+    <div id = "question-4" class="hide customWidth flex-col border-2 border-solid border-black">
       <div id = "q4-header" class = "w-full p-1">
         <h4 class = "text-center">Question 4: In the last month, how often have you felt difficulties
           were piling up so high that you could not overcome them?</h4>
@@ -117,7 +126,7 @@
           </div>
     </div>
 
-    <div id = "question-5" class="hide custom Width flex-col border-2 border-solid border-black">
+    <div id = "question-5" class="hide customWidth flex-col border-2 border-solid border-black">
       <div id = "q5-header" class = "w-full p-1">
         <h4 class = "text-center">Question 5: In the last month, how often have you been angered
           because of things that were outside of your control?</h4>
@@ -150,12 +159,6 @@
   <!-- <section id="quiz-end">
 
   </section> -->
-
-  <div id = "media-list-output">
-    <ul id = "vid-list">
-
-    </ul>
-  </div>
 
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdy91Pcej31TOJWtCTC1NBF3HR6CZ1HWc&callback=initMap">
