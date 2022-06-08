@@ -207,7 +207,11 @@ var button23 = document.getElementById('btn5-3');
 var button24 = document.getElementById('btn5-4');
 var button25 = document.getElementById('btn5-5');
 
-var results = document.getElementById('results');
+
+var result = document.getElementById("results");
+
+document.getElementById("score").innerHTML = "Stress out of my mind!";
+
 
 var score = sessionStorage
 
@@ -266,7 +270,9 @@ button5.addEventListener('click', function() {
 
 })
 
-// question 2 -------------------------------------------------
+
+//-----------------------------------question 2
+
 
 button6.addEventListener('click', function() {
  
@@ -308,7 +314,9 @@ button10.addEventListener('click', function() {
 
 })
 
-// question 3 ------------------------------------------------------------------
+
+// question 3----------------------------------------
+
 
 button11.addEventListener('click', function() {
  
@@ -350,7 +358,9 @@ button15.addEventListener('click', function() {
 
 })
 
-// question 4 --------------------------------------------------------------------------
+
+//question4---------------------------------------------------------
+
 
 button16.addEventListener('click', function() {
  
@@ -392,13 +402,17 @@ button20.addEventListener('click', function() {
 
 })
 
-// question 5 ------------------------------------------------------------------------------
+
+//question 5--------------------------------------------
+
 
 button21.addEventListener('click', function() {
  
   problems = 1
 
-  showResults();
+
+  results()
+
 
 })
 
@@ -406,7 +420,9 @@ button22.addEventListener('click', function() {
  
   problems = 2
 
-  showResults();
+  
+  results()
+
 
 })
 
@@ -414,7 +430,9 @@ button23.addEventListener('click', function() {
  
   problems = 3
 
-  showResults();
+
+  results()
+
 
 })
 
@@ -422,7 +440,9 @@ button24.addEventListener('click', function() {
  
   problems = 4
 
-  showResults();
+
+  results()
+
 
 })
 
@@ -430,11 +450,10 @@ button25.addEventListener('click', function() {
  
   problems = 5
 
-  showResults();
+
+  results()
 
 })
-
-// End questions ------------------------------------------------------------------------
 
 
 function question1Hide() {
@@ -459,6 +478,22 @@ function question4Hide() {
   question4.classList.add("hide")
 
   question5.classList.remove("hide")
+
+  
+}
+
+
+function results() {
+
+  question5.classList.add("hide")
+
+  result.classList.remove('hide')
+
+
+}
+
+function addScore() {
+  score = score
 }
 
 function showResults() {
