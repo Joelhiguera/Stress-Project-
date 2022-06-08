@@ -9,12 +9,14 @@
 >Holden Atkinson
 >Jayden Griffith
 
+Screenshot: ![Site Screenshot](./Screenshot/StressTest.jpeg)
+
 >**Open Code Files:**
 >
 >[HTML](./index.html)
 >
->[CSS](./style.css)
+>[CSS](./Assets/css/style.css)
 >
->[Script](./script.js)
+>[Script](./Assets/js/script.js)
 
 Live Site: Wait
