@@ -61,17 +61,8 @@ body {
 }
 
 div > h4 {
-  font-size: 1.25em;
-  font-weight: 350;
-}
-
-div > button {
-  padding: 5px 20px 5px 20px;
-  border: solid black 2px;
-  border-radius: 8px;
-  background-color: lightgray;
-  width: 95%;
-  height: 45px;
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
 #nav-pages { 
@@ -89,20 +80,10 @@ div > button {
   color: white;
 }
 
-div > .active {
-  background-color: darkgreen;
-}
-
-/* .resource2 {
-  display: none;
-} */
-
 .meditation-header {
   text-align: center;
   margin-top: 40px;
 }
-
-
 
 .article-header {
   text-align: center;
@@ -169,8 +150,39 @@ div > .active {
   color: white;
 }
 
-.quiz-buttons {
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div > button {
+  padding: 5px 20px 5px 20px;
+  border: solid black 2px;
+  border-radius: 8px;
+  height: 45px;
+  width: 98%;
+}
+
+.quiz-buttons:first-child {
+  margin: 15px 0 0 0;
+}
+
+.quiz-buttons:last-child{
   margin: 15px 0 15px 0;
+}
+
+.quiz-buttons {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin: 15px 250px 0px 250px;
+  font-size: 20px;
+  align-items: flex-end;
+}
+
+.quiz-buttons {
+  align-items: flex-end;
 }
 
 .article-nav-item {
@@ -209,6 +221,9 @@ div > .active {
     font-weight: 600;
   }
 
+  .active {
+    color: darkgreen;
+  }
 
 /* -------------------------------------------------------------------------------- */
 /* px values chosen are based on medium and large values associated with Foundation */
@@ -250,7 +265,7 @@ div > .active {
 /* Desktop lg: */
 @media screen and (min-width: 1024px) {
   .customWidth {
-    width: 48%;
+    width: 100%;
   }
 
   #nav-pages { 

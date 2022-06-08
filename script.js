@@ -28,7 +28,6 @@ trtLocations.addEventListener('click', function() {
 })
 
 
-
 function initMap() {
   // The location of Uluru
   const utah = {lat:40.433913164329596, lng:-111.87754869011466}
@@ -516,24 +515,6 @@ function showResults() {
 
   results.classList.remove("hide")
 }
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
 
 
 
