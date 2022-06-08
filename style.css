@@ -40,13 +40,6 @@ body {
   width: 20%;
 }
 
-#nav-pages { 
-  background-color: lightblue;
-  display: flex; 
-  justify-content: center;
-      
-}
-
 #q1-header {
   border-bottom: 1px solid black;
 }
@@ -81,12 +74,23 @@ div > button {
   height: 45px;
 }
 
+#nav-pages { 
+  background-color: lightblue;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav-item {
-  margin: 10px 50px 10px 50px;
-  width: auto;
+  margin: 10px 0 10px 0;
   background-color: rgb(0, 68, 255);
   cursor: pointer;
   color: white;
+}
+
+div > .active {
+  background-color: darkgreen;
 }
 
 /* .resource2 {
@@ -207,6 +211,7 @@ div > button {
     font-weight: 600;
   }
 
+
 /* -------------------------------------------------------------------------------- */
 /* px values chosen are based on medium and large values associated with Foundation */
 /* Refer to: https://get.foundation/sites/docs/media-queries.html */
@@ -216,6 +221,22 @@ div > button {
   .customWidth {
     width: 100%;
   }
+
+  #nav-pages { 
+    background-color: lightblue;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 10px 0 10px 0;
+    background-color: rgb(0, 68, 255);
+    cursor: pointer;
+    color: white;
+  }
+  
 }  
 
 /* -------------------------------------------------------------------------------- */
@@ -225,6 +246,30 @@ div > button {
 @media screen and (min-width: 1024px) {
   .customWidth {
     width: 48%;
+  }
+
+  #nav-pages { 
+    background-color: lightblue;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin: 10px 0 10px 0;
+    background-color: rgb(0, 68, 255);
+    cursor: pointer;
+    color: white;
+  }
+  
+  .nav-item:first-child {
+    margin-right: 8%;
+    margin-left: 120px;
+  }
+  
+  .nav-item:last-child {
+    margin-left: 8%;
+    margin-right: 120px;
   }
 }  
 

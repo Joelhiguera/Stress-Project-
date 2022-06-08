@@ -20,8 +20,10 @@ var mapShow = document.getElementById("showMap")
 trtLocations.addEventListener('click', function() {
   if (mapShow.classList.contains('hide')) {
     mapShow.classList.remove('hide')
+    trtLocations.classList.add('active')
   } else {
     mapShow.classList.add('hide')
+    trtLocations.classList.remove('active')
   }
 })
 
