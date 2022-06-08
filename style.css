@@ -209,11 +209,29 @@ div > button {
 
   .hide {
     display: none;
-  }   
-
-  #mapHeader {
+  }
+  
+  #mapHeader,
+  #videosHeader {
     font-size: 1.5em;
     font-weight: 600;
+  }
+
+  .mediaList {
+    margin: 10px 1% 10px 1%;
+    border: solid 2px black;
+    padding: 1%;
+  }
+
+  .videoList {
+    text-align: center;
+  }
+
+  .videoList > li > a {
+    text-decoration: underline;
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 18px;
+    color: rgb(37, 77, 255)
   }
 
   #resources {
