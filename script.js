@@ -4,7 +4,6 @@ var question3 = document.getElementById("question-3")
 var question4 = document.getElementById("question-4")
 var question5 = document.getElementById("question-5")
 
-
 var vidList = document.getElementById("vid-list")
 
 var APIKey = "AIzaSyB2AVRTPsPVNyZ9x6SkKoF8qwA4NTcxRKM"
@@ -14,6 +13,19 @@ var score;
 // Access different buttons by child index?
 // Will eventually need at least two fetch requests using different APIs
 // How will we recognize quiz 'score'?
+
+var trtLocations = document.getElementById("treatment")
+var mapShow = document.getElementById("showMap")
+
+trtLocations.addEventListener('click', function() {
+  if (mapShow.classList.contains('hide')) {
+    mapShow.classList.remove('hide')
+  } else {
+    mapShow.classList.add('hide')
+  }
+})
+
+
 
 function initMap() {
   // The location of Uluru
@@ -109,6 +121,7 @@ window.initMap = initMap;
 
 // Based on the score, should I call different functions? Or change the search query?
 // Leaning toward multiple functions.
+
 
 function getVideosByKeyword(grabUrl) {
   var grabUrl = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=calming%20exercises&type=video&videoDefinition=high&key=" + APIKey 
