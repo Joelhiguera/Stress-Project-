@@ -206,6 +206,10 @@ var button23 = document.getElementById('btn5-3');
 var button24 = document.getElementById('btn5-4');
 var button25 = document.getElementById('btn5-5');
 
+var result = document.getElementById("results");
+
+document.getElementById("score").innerHTML = "Stress out of my mind!";
+
 var score = sessionStorage
 
 
@@ -263,7 +267,7 @@ button5.addEventListener('click', function() {
 
 })
 
-//question 2
+//-----------------------------------question 2
 
 button6.addEventListener('click', function() {
  
@@ -305,6 +309,132 @@ button10.addEventListener('click', function() {
 
 })
 
+// question 3----------------------------------------
+
+button11.addEventListener('click', function() {
+ 
+  problems = 1
+
+  question3Hide();
+
+})
+
+button12.addEventListener('click', function() {
+ 
+  problems = 2
+
+  question3Hide();
+
+})
+
+button13.addEventListener('click', function() {
+ 
+  problems = 3
+
+  question3Hide();
+
+})
+
+button14.addEventListener('click', function() {
+ 
+  problems = 4
+
+  question3Hide();
+
+})
+
+button15.addEventListener('click', function() {
+ 
+  problems = 5
+
+  question3Hide();
+
+})
+
+//question4---------------------------------------------------------
+
+button16.addEventListener('click', function() {
+ 
+  problems = 1
+
+  question4Hide();
+
+})
+
+button17.addEventListener('click', function() {
+ 
+  problems = 2
+
+  question4Hide();
+
+})
+
+button18.addEventListener('click', function() {
+ 
+  problems = 3
+
+  question4Hide();
+
+})
+
+button19.addEventListener('click', function() {
+ 
+  problems = 4
+
+  question4Hide();
+
+})
+
+button20.addEventListener('click', function() {
+ 
+  problems = 5
+
+  question4Hide();
+
+})
+
+//question 5--------------------------------------------
+
+button21.addEventListener('click', function() {
+ 
+  problems = 1
+
+  results()
+
+})
+
+button22.addEventListener('click', function() {
+ 
+  problems = 2
+
+  results()
+
+})
+
+button23.addEventListener('click', function() {
+ 
+  problems = 3
+
+  results()
+
+})
+
+button24.addEventListener('click', function() {
+ 
+  problems = 4
+
+  results()
+
+})
+
+button25.addEventListener('click', function() {
+ 
+  problems = 5
+
+  results()
+
+})
+
 function question1Hide() {
   question1.classList.add("hide")
 
@@ -327,6 +457,22 @@ function question4Hide() {
   question4.classList.add("hide")
 
   question5.classList.remove("hide")
+
+  
+}
+
+
+function results() {
+
+  question5.classList.add("hide")
+
+  result.classList.remove('hide')
+
+
+}
+
+function addScore() {
+  score = score
 }
 
 
