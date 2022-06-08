@@ -20,14 +20,13 @@ body {
 }
 
 .resource-page {
-    display: flex;
-    justify-content: center;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation-header {
   text-align: center;
-    margin-top: 40px;
-
 }
 
 #row {
@@ -42,9 +41,9 @@ body {
 }
 
 #nav-pages { 
-    border: 1px solid black;
-    display: flex; 
-    justify-content: center;
+  background-color: lightblue;
+  display: flex; 
+  justify-content: center;
       
 }
 
@@ -83,13 +82,16 @@ div > button {
 }
 
 .nav-item {
-margin-right: 15px;
-
+  margin: 10px 50px 10px 50px;
+  width: auto;
+  background-color: rgb(0, 68, 255);
+  cursor: pointer;
+  color: white;
 }
 
-.resource2 {
+/* .resource2 {
   display: none;
-}
+} */
 
 .meditation-header {
   text-align: center;
@@ -100,12 +102,13 @@ margin-right: 15px;
 
 .article-header {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px
 }
 
 .hotline-header {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .meditation-quote {
@@ -114,32 +117,23 @@ margin-right: 15px;
 }
 
 .video-box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  text-align: center;
   top: 50%;
-  left: 30%;
   width: 500px;
   height: 500px;
   background-color: lightblue;
 }
 
 .video-boxes {
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-#nav-pages {
-  border: 1px solid black;
   display: flex;
+  margin: 20px auto 0px auto;
   justify-content: center;
 }
 
-.nav-item {
-  margin-right: 15px;
-  width: auto;
-  background-color: blue;
-  cursor: pointer;
-  color: white;
-}
 
 .med-nav {
   border: 1px solid black;
@@ -153,6 +147,7 @@ margin-right: 15px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 .hotline-nav {
@@ -190,17 +185,28 @@ margin-right: 15px;
     cursor: pointer;
   }
 
-#map {
- position: relative;
- left: 25%;
-  width: 50%;
-  height: 800px;
-}
+  #map {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 800px;
+  }
 
 
-.hide {
+  .hide {
     display: none;
-}    
+  }   
+
+  #mapHeader {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  #resources {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
 /* -------------------------------------------------------------------------------- */
 /* px values chosen are based on medium and large values associated with Foundation */
 /* Refer to: https://get.foundation/sites/docs/media-queries.html */
