@@ -23,15 +23,34 @@
 <body class="bg-white-300">
   <!-- Header with placeholder elements for future development. Could make them clickable,
   interactive, link to an area of the page, to a different page, restart the quiz, etc. -->
-  
-  <!-- <header id = "row" class =  "flex justify-center items-center">
-      <div id = "nav-left" class = "flex justify-center items-center">
-        <h3 id = "left-head">placeholder</h3>
-      </div>
 
-        <div id = "stress-quiz-header" class = "flex justify-center items-center">
+        <!-- <div id = "stress-quiz-header" class = "flex justify-center items-center">
           <h1 id = "main-title" class = "px-20">Stress Quiz</h1>
-        </div>
+        </div> -->
+
+  <nav class="bg-blue-300 p-5 shadow md:flex md:items-center md:justify-between">
+    <div>
+      <span class="text-2xl font-arial">STRESS TEST</span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static">
+      <li class="mx-4 my-6 md:my-0"><a id="treatment" class="cursor-pointer duration text-xl hover:text-cyan-500">TREATMENT LOCATIONS</a></li>
+      <li class="mx-4 my-6 md:my-0"><a class="duration text-xl hover:text-cyan-500">HOTLINES</a></li>
+      <li class="mx-4 my-6 md:my-0"><a class="duration text-xl hover:text-cyan-500">STRESS RELIEF VIDEOS</a></li>
+      
+
+      <button class="bg-blue-900 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500">Stress Quiz</button>
+    </ul>
+  </nav>
+
+ 
+    <!-- <nav>
+      <div id="nav-pages">
+        <button class="nav-item">Meditations</button>
+        <button id="treatment" class="nav-item">Treatment Locations</button>
+        <button class="nav-item">Hotlines</button>
+      </div> 
+    </nav> -->
 
       <div id = "nav-right" class = "flex justify-center items-center">
         <h3 id = right-head>placeholder</h3>
@@ -70,13 +89,13 @@
       <div id = "q1-header" class = "w-full p-1">
         <h4 class = "text-center">Question 1: In the last month, how often have you felt nervous and “stressed”?</h4>
       </div>
-          <div class = "text-center h-auto p-2">
+          <div class = "h-auto p-2">
             <div class = "card-body">
-              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-1" >One</button></div>
-              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-2" >Two</button></div>
-              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-3" >Three</button></div>
-              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-4" >Four</button></div>
-              <div  class="quiz-buttons"><button  class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn-5" >Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 hover:bg-cyan-500" id="btn-1" >One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 hover:bg-cyan-500" id="btn-2" >Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 hover:bg-cyan-500" id="btn-3" >Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 hover:bg-cyan-500" id="btn-4" >Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 hover:bg-cyan-500" id="btn-5" >Five</button></div>
             </div>
           </div>
     </div>
@@ -88,11 +107,11 @@
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-1" >One</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-2">Two</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-3">Three</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-4">Four</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn2-5">Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn2-1" >One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn2-2">Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn2-3">Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn2-4">Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn2-5">Five</button></div>
             </div>
           </div>
     </div>
@@ -104,11 +123,11 @@
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-1">One</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-2">Two</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-3">Three</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-4">Four</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn3-5">Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn3-1">One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn3-2">Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn3-3">Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn3-4">Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn3-5">Five</button></div>
             </div>
           </div>
     </div>
@@ -120,11 +139,11 @@
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-1">One</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-2">Two</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-3">Three</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-4">Four</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn4-5">Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn4-1">One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn4-2">Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn4-3">Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn4-4">Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn4-5">Five</button></div>
             </div>
           </div>
     </div>
@@ -136,17 +155,16 @@
       </div>
           <div class = "text-center h-auto p-2">
             <div class = "card-body">
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-1">One</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-2">Two</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-3">Three</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-4">Four</button></div>
-              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 py-2 mx-4 hover:bg-cyan-500" id="btn5-5">Five</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn5-1">One</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn5-2">Two</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn5-3">Three</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn5-4">Four</button></div>
+              <div class="quiz-buttons"><button class="bg-blue-500 text-white font-arial duration-500 px-6 mx-4 hover:bg-cyan-500" id="btn5-5">Five</button></div>
             </div>
           </div>
     </div>
 
-
-    <div id = "results" class="hide bg-red-500 custom Width flex-col border-2 border-solid border-black">
+    <div id = "results" class="hide bg-red-500 customWidth flex-col border-2 border-solid border-black">
       <div id = "q5-header" class = "w-full p-1">
         <h4 class = "text-center">Here are your results: <span id="score"> </span></h4>
        </div>

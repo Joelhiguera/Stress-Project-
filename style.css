@@ -40,13 +40,6 @@ body {
   width: 20%;
 }
 
-#nav-pages { 
-  background-color: lightblue;
-  display: flex; 
-  justify-content: center;
-      
-}
-
 #q1-header {
   border-bottom: 1px solid black;
 }
@@ -68,37 +61,29 @@ body {
 }
 
 div > h4 {
-  font-size: 1.25em;
-  font-weight: 350;
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
-div > button {
-  padding: 5px 20px 5px 20px;
-  border: solid black 2px;
-  border-radius: 8px;
-  background-color: lightgray;
-  width: 95%;
-  height: 45px;
+#nav-pages { 
+  background-color: lightblue;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-item {
-  margin: 10px 50px 10px 50px;
-  width: auto;
+  margin: 10px 0 10px 0;
   background-color: rgb(0, 68, 255);
   cursor: pointer;
   color: white;
 }
 
-/* .resource2 {
-  display: none;
-} */
-
 .meditation-header {
   text-align: center;
   margin-top: 40px;
 }
-
-
 
 .article-header {
   text-align: center;
@@ -165,8 +150,39 @@ div > button {
   color: white;
 }
 
-.quiz-buttons {
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div > button {
+  padding: 5px 20px 5px 20px;
+  border: solid black 2px;
+  border-radius: 8px;
+  height: 45px;
+  width: 98%;
+}
+
+.quiz-buttons:first-child {
+  margin: 15px 0 0 0;
+}
+
+.quiz-buttons:last-child{
   margin: 15px 0 15px 0;
+}
+
+.quiz-buttons {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin: 15px 250px 0px 250px;
+  font-size: 20px;
+  align-items: flex-end;
+}
+
+.quiz-buttons {
+  align-items: flex-end;
 }
 
 .article-nav-item {
@@ -187,11 +203,9 @@ div > button {
 
   #map {
     position: relative;
-    left: 25%;
-    width: 50%;
-    height: 800px;
+    width: 100%;
+    height: 300px;
   }
-
 
   .hide {
     display: none;
@@ -207,6 +221,10 @@ div > button {
     font-weight: 600;
   }
 
+  .active {
+    color: green;
+  }
+
 /* -------------------------------------------------------------------------------- */
 /* px values chosen are based on medium and large values associated with Foundation */
 /* Refer to: https://get.foundation/sites/docs/media-queries.html */
@@ -216,6 +234,29 @@ div > button {
   .customWidth {
     width: 100%;
   }
+
+  #nav-pages { 
+    background-color: lightblue;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 10px 0 10px 0;
+    background-color: rgb(0, 68, 255);
+    cursor: pointer;
+    color: white;
+  }
+  
+  #map {
+    position: relative;
+    width: 75%;
+    margin: 0 auto 0 auto;
+    height: 350px;
+  }
+
 }  
 
 /* -------------------------------------------------------------------------------- */
@@ -224,8 +265,40 @@ div > button {
 /* Desktop lg: */
 @media screen and (min-width: 1024px) {
   .customWidth {
-    width: 48%;
+    width: 100%;
   }
+
+  #nav-pages { 
+    background-color: lightblue;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin: 10px 0 10px 0;
+    background-color: rgb(0, 68, 255);
+    cursor: pointer;
+    color: white;
+  }
+  
+  .nav-item:first-child {
+    margin-right: 8%;
+    margin-left: 120px;
+  }
+  
+  .nav-item:last-child {
+    margin-left: 8%;
+    margin-right: 120px;
+  }
+
+  #map {
+    position: relative;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto 0 auto;
+  }
+
 }  
 
 
