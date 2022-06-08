@@ -398,7 +398,7 @@ button21.addEventListener('click', function() {
  
   problems = 1
 
-  question4Hide();
+  showResults();
 
 })
 
@@ -406,7 +406,7 @@ button22.addEventListener('click', function() {
  
   problems = 2
 
-  question4Hide();
+  showResults();
 
 })
 
@@ -414,7 +414,7 @@ button23.addEventListener('click', function() {
  
   problems = 3
 
-  question4Hide();
+  showResults();
 
 })
 
@@ -422,7 +422,7 @@ button24.addEventListener('click', function() {
  
   problems = 4
 
-  question4Hide();
+  showResults();
 
 })
 
@@ -430,7 +430,7 @@ button25.addEventListener('click', function() {
  
   problems = 5
 
-  question4Hide();
+  showResults();
 
 })
 
